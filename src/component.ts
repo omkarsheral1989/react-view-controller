@@ -1,23 +1,23 @@
-import { Component } from 'react';
+import {Component} from 'react';
 import RVC_Controller from './controller';
 
 export default class RVC_Component<
   IProps,
   IState,
   Controller extends RVC_Controller<IProps, IState, RVC_Component<IProps, IState, Controller>>
->extends Component<IProps, IState> {
+> extends Component<IProps, IState> {
 
   public readonly controller: Controller;
 
-  constructor(props: any) {
+  constructor(props: Partial<Readonly<IProps>>) {
     // noinspection JSCheckFunctionSignatures
-    super(props);
+    super(props as IProps);
     const viewControllerClass = this.getViewControllerClass();
     this.controller = new viewControllerClass(this);
   }
 
   // noinspection JSMethodCanBeStatic
-  public getViewControllerClass(): new (component: RVC_Component<IProps, IState, Controller>) => Controller {
+  public getViewControllerClass(): new (component: any) => Controller {
     throw new Error('Override getViewControllerClass()');
   }
 
