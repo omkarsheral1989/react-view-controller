@@ -1,6 +1,6 @@
 {
   "name": "@omkar-sheral/react-view-controller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Controller for React Component",
   "main": "dist/index.js",
   "repository": "https://github.com/omkarsheral1989/react-view-controller.git",
