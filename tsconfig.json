@@ -1,0 +1,25 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "lib": [
+      "dom",
+      "es7"
+    ],
+    "jsx": "preserve",
+    "sourceMap": true,
+    "alwaysStrict": true,
+    "noLib": false,
+    "outDir": "./dist",
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  }
+}

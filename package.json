@@ -1,0 +1,23 @@
+{
+  "name": "@omkar-sheral/react-view-controller",
+  "version": "1.0.0",
+  "description": "Controller for React Component",
+  "main": "dist/index.js",
+  "repository": "https://github.com/omkarsheral1989/react-view-controller.git",
+  "author": "Omkar Sheral (omkar.sheral.1989@gmail.com)",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "rm -rf ./dist && tsc -p ./tsconfig.json"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/react": "16.8.14",
+    "react": "^16.8.6",
+    "tsc": "1.20150623.0",
+    "typescript": "3.4.5"
+  }
+}
